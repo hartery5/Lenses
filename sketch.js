@@ -395,7 +395,7 @@ function draw() {
   
   
   let vspacing = 18;
-  let textstart = 2.5*height/4
+  let textstart = 2.2*height/4
 
   if (showAll){
     push();
@@ -409,9 +409,9 @@ function draw() {
     fill(0);
     noStroke();
     text('Self-luminous, or "perfectly-lit",',10,textstart+vspacing);
-    text('objects emanate or relect light',10,textstart+2*vspacing);
-    text('rays in all directions.',10,textstart+3.5*vspacing);
-    text('A converging lens focusses rays', 10, textstart+4.5*vspacing);
+    text('objects emanate or reflect light',10,textstart+2*vspacing);
+    text('rays in all directions.',10,textstart+3*vspacing);
+    text('A converging lens focuses incident rays from an object', 10, textstart+4.5*vspacing);
     text('to a unique point, forming a real image.',10,textstart+5.5*vspacing);
     pop();
   }
@@ -428,7 +428,7 @@ function draw() {
     fill(0);
     noStroke();
     text('A screen placed at the convergence', 10, textstart+vspacing);
-    text('of the rays will display an image.', 10, textstart+2*vspacing);
+    text('of the refracted rays will display an image.', 10, textstart+2*vspacing);
     
     text('Since light travels in straight', 10,textstart+3.5*vspacing);
     text('lines, only the rays which strike', 10,textstart+4.5*vspacing);
@@ -487,8 +487,8 @@ function draw() {
       noStroke();
       text("Towards the normal!", 10, textstart+vspacing);
       text('Light is  moving slower within the', 10, textstart+2.5*vspacing);
-      text("lens,  so it  covers more distance", 10, textstart+3.5*vspacing);
-      text("in air,  where  it travels quickly,", 10, textstart+4.5*vspacing);
+      text("lens,  so it will seek to covers more", 10, textstart+3.5*vspacing);
+      text("distance in air,  where it moves quickly,", 10, textstart+4.5*vspacing);
       text("in order to travel through the lens", 10, textstart+5.5*vspacing);
       text("in the least amount of time.", 10, textstart+6.5*vspacing);
       
@@ -609,21 +609,20 @@ function draw() {
     noStroke();
     text("Another pair of triangles requires",10,textstart+vspacing);
     text("a little imagination.",10,textstart+2*vspacing);
-    text("But, it's obvious that the internal", 10, textstart+3.5*vspacing);
-    text("angles of the triangles \"correspond\".",textstart+4.5*vspacing);
-    text("Therefore: s/f = (h + h')/h'",10,textstart+6*vspacing);
-    text("With a bit of algebra, this yields", 10, textstart+7.5*vspacing);
-    text("the thin lens equation:",10,textstart+8.5*vspacing);
-    text("1   1   1",10,textstart+9.5*vspacing);
-    text("  =   +  ",10,textstart+9.5*vspacing+5);
-    text("f   s   s'",10,textstart+10.5*vspacing);
+    text("Notice that the internal angles correspond.", 10, textstart+3.5*vspacing);
+    text("Therefore: s/f = (h + h')/h'",10,textstart+5*vspacing);
+    text("With a bit of algebra, this yields", 10, textstart+6.5*vspacing);
+    text("the thin lens equation:",10,textstart+7.5*vspacing);
+    text("1   1   1",10,textstart+8.5*vspacing);
+    text("  =   +  ",10,textstart+9*vspacing);
+    text("f   s   s'",10,textstart+9.5*vspacing);
 
     stroke(0);
     strokeWeight(2);
     noFill();
-    line(8,2.5*height/4+129,20,2.5*height/4+129);
-    line(76,2.5*height/4+129,88,2.5*height/4+129);
-    line(42,2.5*height/4+129,54,2.5*height/4+129);
+    line(8,textstart+8.8*vspacing,20,textstart+8.8*vspacing);
+    line(86,textstart+8.8*vspacing,98,textstart+8.8*vspacing);
+    line(48,textstart+8.8*vspacing,60,textstart+8.8*vspacing);
     
     pop();
     
@@ -645,6 +644,8 @@ function mouseClicked(){
     } else {
       mouseCounter = 0;
     }
+  } else {
+    mouseCounter = 0;
   }
 }
   
