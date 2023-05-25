@@ -394,24 +394,25 @@ function draw() {
   //text(mouseCounter, width-90,height/2+30);
   
   
+  let vspacing = 18;
+  let textstart = 2.5*height/4
 
   if (showAll){
     push();
     fill(220);
     noStroke();
-    rect(0, 3*height/4, 3*L.x/4, height/4);
+    rect(0, textstart, 3*L.x/4, height-textstart);
     pop();
   
     push();
-    textSize(14);
+    textSize(vspacing-2);
     fill(0);
-    noStroke()
-    text('Self-luminous, or "perfectly-lit",',10,3*height/4+15);
-    text('objects emanate or relect light',10,3*height/4+30);
-    text('rays in all directions.',10,3*height/4+45);
-    text('A converging lens focusses rays', 10, 3*height/4+65);
-    text('to a unique point, forming a real',10,3*height/4+80);
-    text('image.',10,3*height/4+95);
+    noStroke();
+    text('Self-luminous, or "perfectly-lit",',10,textstart+vspacing);
+    text('objects emanate or relect light',10,textstart+2*vspacing);
+    text('rays in all directions.',10,textstart+3.5*vspacing);
+    text('A converging lens focusses rays', 10, textstart+4.5*vspacing);
+    text('to a unique point, forming a real image.',10,textstart+5.5*vspacing);
     pop();
   }
   
@@ -419,20 +420,19 @@ function draw() {
     push();
     fill(220);
     noStroke();
-    rect(0, 3*height/4, 3*L.x/4, height/4);
+    rect(0, textstart, 3*L.x/4, height-textstart);
     pop();
   
-    
     push();
-    textSize(14);
+    textSize(vspacing-2);
     fill(0);
     noStroke();
-    text('A screen placed at the convergence', 10, 3*height/4+15);
-    text('of the rays will display an image.', 10, 3*height/4+30);
+    text('A screen placed at the convergence', 10, textstart+vspacing);
+    text('of the rays will display an image.', 10, textstart+2*vspacing);
     
-    text('Since light travels in straight', 10,3*height/4+50);
-    text('lines, only the rays which strike', 10,3*height/4+65);
-    text('the lens will help form the image.',10,3*height/4+80);
+    text('Since light travels in straight', 10,textstart+3.5*vspacing);
+    text('lines, only the rays which strike', 10,textstart+4.5*vspacing);
+    text('the lens will help form the image.',10,textstart+5.5*vspacing);
     pop();
   }
   
@@ -441,39 +441,36 @@ function draw() {
       push();
       fill(220);
       noStroke();
-      rect(0, 3*height/4, 3*L.x/4, height/4);
+      rect(0, textstart, 3*L.x/4, height-textstart);
       pop();
 
-
       push();
-      textSize(14);
+      textSize(vspacing-2);
       fill(0);
       noStroke();
-      text("Our goal is to reduce the number", 10, 3*height/4+15);
-      text('of rays we need to consider.', 10, 3*height/4+30);
-      text("Let's first consider a ray parallel", 10, 3*height/4+50);
-      text("to the optical axis.", 10, 3*height/4+65);
+      text("Our goal is to reduce the number", 10, textstart+vspacing);
+      text('of rays we need to consider.', 10, textstart+2*vspacing);
+      text("Let's first consider a ray parallel", 10, textstart+3.5*vspacing);
+      text("to the optical axis.", 10, textstart+4.5*vspacing);
       pop();
     }
     if (mouseCounter==2){
       push();
       fill(220);
       noStroke();
-      rect(0, 3*height/4, 3*L.x/4, height/4);
+      rect(0, textstart, 3*L.x/4, height-textstart);
       pop();
 
-
       push();
-      textSize(14);
+      textSize(vspacing-2);
       fill(0);
       noStroke();
-      text("This ray is incident on a circular", 10, 3*height/4+10);
-      text('surface.', 10, 3*height/4+25);
-      text("The normal of the surface is simply", 10, 3*height/4+45);
-      text("a radial line.", 10, 3*height/4+60);
-      text("If the lens is made of glass (n = 1.5)", 10, 3*height/4+80);
-      text("will it be refracted towards or away?", 10, 3*height/4+95);
-      
+      text("This ray is incident on a circular", 10, textstart+vspacing);
+      text('surface.', 10, textstart+2*vspacing);
+      text("The normal of the surface is simply", 10, textstart+3.5*vspacing);
+      text("a radial line.", 10, textstart+4.5*vspacing);
+      text("If the lens is made of glass (n = 1.5)", 10, textstart+6*vspacing);
+      text("will it be refracted towards or away?", 10, textstart+7*vspacing);
       pop();
     }
     
@@ -481,59 +478,59 @@ function draw() {
       push();
       fill(220);
       noStroke();
-      rect(0, 3*height/4, 3*L.x/4, height/4);
+      rect(0, textstart, 3*L.x/4, height-textstart);
       pop();
-      
+
       push();
-      textSize(14);
+      textSize(vspacing-2);
       fill(0);
       noStroke();
-      text("Towards the normal!", 10, 3*height/4+10);
-      text('Light is  moving slower within the', 10, 3*height/4+30);
-      text("lens,  so it  covers more distance", 10, 3*height/4+45);
-      text("in air,  where  it travels quickly,", 10, 3*height/4+60);
-      text("in order to travel through the lens", 10, 3*height/4+75);
-      text("in the least amount of time.", 10, 3*height/4+90);
+      text("Towards the normal!", 10, textstart+vspacing);
+      text('Light is  moving slower within the', 10, textstart+2.5*vspacing);
+      text("lens,  so it  covers more distance", 10, textstart+3.5*vspacing);
+      text("in air,  where  it travels quickly,", 10, textstart+4.5*vspacing);
+      text("in order to travel through the lens", 10, textstart+5.5*vspacing);
+      text("in the least amount of time.", 10, textstart+6.5*vspacing);
       
       pop();
     }
     
     if (mouseCounter==4){
-      push();
-      fill(220);
-      noStroke();
-      rect(0, 3*height/4, 3*L.x/4, height/4);
-      pop();
-      
-      push();
-      textSize(14);
-      fill(0);
-      noStroke();
-      text("Once again, light strikes a circular", 10, 3*height/4+10);
-      text('boundary.', 10, 3*height/4+25);
-      text("Will it be refracted towards or away", 10, 3*height/4+45);
-      text("from the normal?", 10, 3*height/4+60);
+    push();
+    fill(220);
+    noStroke();
+    rect(0, textstart, 3*L.x/4, height-textstart);
+    pop();
+  
+    push();
+    textSize(vspacing-2);
+    fill(0);
+    noStroke();
+      text("Once again, light strikes a circular", 10, textstart+vspacing);
+      text('boundary.', 10, textstart+2*vspacing);
+      text("Will it be refracted towards or away", 10, textstart+3.5*vspacing);
+      text("from the normal?", 10, textstart+4.5*vspacing);
       pop();
     }
     
     if (mouseCounter>4){
-      push();
-      fill(220);
-      noStroke();
-      rect(0, 3*height/4, 3*L.x/4, height/4);
-      pop();
-      
-      push();
-      textSize(14);
-      fill(0);
-      noStroke();
-      text("Away!", 10, 3*height/4+10);
-      text('Notice how the light intersects the', 10, 3*height/4+30);
-      text("optical axis. If the parallel ray is", 10, 3*height/4+45);
-      text("close to the axis, it always strikes", 10, 3*height/4+60);
-      text("the axis at the same point.", 10, 3*height/4+75);
+    push();
+    fill(220);
+    noStroke();
+    rect(0, textstart, 3*L.x/4, height-textstart);
+    pop();
+  
+    push();
+    textSize(vspacing-2);
+    fill(0);
+    noStroke();
+      text("Away!", 10, textstart+vspacing);
+      text('Notice how the light intersects the', 10, textstart+2.5*vspacing);
+      text("optical axis. If the parallel ray is", 10, textstart+3.5*vspacing);
+      text("close to the axis, it always strikes", 10, textstart+4.5*vspacing);
+      text("the axis at the same point.", 10, textstart+5.5*vspacing);
 
-      text("This point is the focal point, F.", 10, 3*height/4+95);
+      text("This point is the focal point, F.", 10, textstart+7*vspacing);
       pop();
     }
   }
@@ -542,21 +539,21 @@ function draw() {
     push();
     fill(220);
     noStroke();
-    rect(0, 3*height/4, 3*L.x/4, height/4);
+    rect(0, textstart, 3*L.x/4, height-textstart);
     pop();
-    
+  
     push();
-    textSize(14);
+    textSize(vspacing-2);
     fill(0);
     noStroke();
-    text("There are 3 Principal Rays:", 10, 3*height/4+10);
-    text('1. A parallel rays become focused.', 10, 3*height/4+30);
+    text("There are 3 Principal Rays:", 10, textstart+vspacing);
+    text('1. Parallel rays become focused.', 10, textstart+2*vspacing);
     
     if (mouseCounter>0){
-      text("2. A focused ray becomes parallel.",10,3*height/4+50);
+      text("2. Focused rays become parallel.",10,textstart+3*vspacing);
     }
     if (mouseCounter>1){
-      text("3. The undeflected ray.",10,3*height/4+70);
+      text("3. The undeflected ray.",10,textstart+4*vspacing);
     }
     pop();
   }
@@ -565,60 +562,61 @@ function draw() {
     push();
     fill(220);
     noStroke();
-    rect(0, 3*height/4, 3*L.x/4, height/4);
+    rect(0, textstart, 3*L.x/4, height-textstart);
     pop();
-    
+  
     push();
-    textSize(14);
+    textSize(vspacing-2);
     fill(0);
     noStroke();
-    text("Let's define some geometry:",10,3*height/4+10);
-    text("s : Object distance (m)",10,3*height/4+25);
-    text("s': Image distance (m)",10,3*height/4+40);
-    text("f : focal length (m)",10, 3*height/4+55);
-    text("h : Object height (m)",10,3*height/4+70);
-    text("h': Image height (m)",10, 3*height/4+85);
+    text("Let's define some geometry:",10,textstart+vspacing);
+    text("s : Object distance (m)",10,textstart+2*vspacing);
+    text("s': Image distance (m)",10,textstart+3*vspacing);
+    text("f : focal length (m)",10, textstart+4*vspacing);
+    text("h : Object height (m)",10,textstart+5*vspacing);
+    text("h': Image height (m)",10, textstart+6*vspacing);
   }
   
   if (showTriangle1 && showPrinciple && showImage){
+
     push();
     fill(220);
     noStroke();
-    rect(0, 3*height/4, 3*L.x/4, height/4);
+    rect(0, textstart, 3*L.x/4, height-textstart);
     pop();
-    
+  
     push();
-    textSize(14);
+    textSize(vspacing-2);
     fill(0);
     noStroke();
-    text("There are many triangles in this",10,3*height/4+10);
-    text("drawing. How can we exploit them?",10,3*height/4+25);
-    text("Applying the 'X Rule', we can see", 10, 3*height/4+45);
-    text("That the triangles are similar.",10,3*height/4+60);
-    text("Therefore, M = h\'/h = s\'/s",10,3*height/4+80);
+    text("There are many triangles in this",10,textstart+vspacing);
+    text("drawing. How can we exploit them?",10,textstart+2*vspacing);
+    text("Applying the 'X Rule', we can see", 10,textstart+3.5*vspacing);
+    text("that the triangles are similar.",10,textstart+4.5*vspacing);
+    text("Therefore, M = h\'/h = s\'/s",10,textstart+6*vspacing);
   }
   
   if (showTriangle2 && showPrinciple && showImage){
     push();
     fill(220);
     noStroke();
-    rect(0, 2.5*height/4, 3*L.x/4, 1.5*height/4);
+    rect(0, textstart, 3*L.x/4, height-textstart);
     pop();
-    
+  
     push();
-    textSize(14);
+    textSize(vspacing-2);
     fill(0);
     noStroke();
-    text("Another pair of triangles requires",10,2.5*height/4+10);
-    text("a little imagination.",10,2.5*height/4+25);
-    text("But, it's obvious that the internal", 10, 2.5*height/4+45);
-    text("angles of the triangles \"correspond\".",10,2.5*height/4+60);
-    text("Therefore: s/f = (h + h')/h'",10,2.5*height/4+80);
-    text("With a bit of algebra, this yields", 10, 2.5*height/4+95);
-    text("the thin lens equation:",10,2.5*height/4+110);
-    text("1   1   1",10,2.5*height/4+125);
-    text("  =   +  ",10,2.5*height/4+130);
-    text("f   s   s'",10,2.5*height/4+140);
+    text("Another pair of triangles requires",10,textstart+vspacing);
+    text("a little imagination.",10,textstart+2*vspacing);
+    text("But, it's obvious that the internal", 10, textstart+3.5*vspacing);
+    text("angles of the triangles \"correspond\".",textstart+4.5*vspacing);
+    text("Therefore: s/f = (h + h')/h'",10,textstart+6*vspacing);
+    text("With a bit of algebra, this yields", 10, textstart+7.5*vspacing);
+    text("the thin lens equation:",10,textstart+8.5*vspacing);
+    text("1   1   1",10,textstart+9.5*vspacing);
+    text("  =   +  ",10,textstart+9.5*vspacing+5);
+    text("f   s   s'",10,textstart+10.5*vspacing);
 
     stroke(0);
     strokeWeight(2);
