@@ -246,6 +246,7 @@ function draw() {
     if (mouseCounter>1){
       push();
       noFill();
+      stroke(0);
       circle(L.x+rad*cos(eps),height/2,dia);
       fill(0)
       stroke(0);
