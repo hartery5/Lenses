@@ -530,6 +530,7 @@ function draw() {
       text("close to the axis, it always strikes", 10, textstart+4.5*vspacing);
       text("the axis at the same point.", 10, textstart+5.5*vspacing);
     pop();
+    }
     if (mouseCounter>5){
           push();
     fill(220);
