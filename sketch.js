@@ -487,11 +487,10 @@ function draw() {
       fill(0);
       noStroke();
       text("Towards the normal!", 10, textstart+vspacing);
-      text('Light is  moving slower within the', 10, textstart+2.5*vspacing);
-      text("lens,  so it will seek to covers more", 10, textstart+3.5*vspacing);
-      text("distance in air,  where it moves quickly,", 10, textstart+4.5*vspacing);
-      text("in order to travel through the lens", 10, textstart+5.5*vspacing);
-      text("in the least amount of time.", 10, textstart+6.5*vspacing);
+      text('Recall that n = c / v', 10, textstart+2.5*vspacing);
+      text("so light travels slower within the lens", 10, textstart+3.5*vspacing);
+      text("than within air.", 10, textstart+4.5*vspacing);
+      text("e.g. Lifeguard", 10, textstart+6*vspacing);
       
       pop();
     }
@@ -526,11 +525,22 @@ function draw() {
     fill(0);
     noStroke();
       text("Away!", 10, textstart+vspacing);
-      text('Notice how the light intersects the', 10, textstart+2.5*vspacing);
+      text('Notice where the light intersects the', 10, textstart+2.5*vspacing);
       text("optical axis. If the parallel ray is", 10, textstart+3.5*vspacing);
       text("close to the axis, it always strikes", 10, textstart+4.5*vspacing);
       text("the axis at the same point.", 10, textstart+5.5*vspacing);
-
+    pop();
+    if (mouseCounter>5){
+          push();
+    fill(220);
+    noStroke();
+    rect(0, textstart, 3*L.x/4, height-textstart);
+    pop();
+  
+    push();
+    textSize(vspacing-2);
+    fill(0);
+    noStroke();
       text("This point is the focal point, F.", 10, textstart+7*vspacing);
       pop();
     }
