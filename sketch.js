@@ -412,8 +412,8 @@ function draw() {
     text('Self-luminous, or "perfectly-lit",',10,textstart+vspacing);
     text('objects emanate or reflect light',10,textstart+2*vspacing);
     text('rays in all directions.',10,textstart+3*vspacing);
-    text('A converging lens focuses incident rays from an object', 10, textstart+4.5*vspacing);
-    text('to a unique point, forming a real image.',10,textstart+5.5*vspacing);
+    text('A converging lens focuses incident rays from an', 10, textstart+4.5*vspacing);
+    text('object to a unique point, forming a real image.',10,textstart+5.5*vspacing);
     pop();
   }
   
