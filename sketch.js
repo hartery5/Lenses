@@ -645,7 +645,7 @@ function mouseClicked(){
     } else {
       mouseCounter = 0;
     }
-  } else {
+  } else if ((mouseX > 0.5*width) && (mouseY > 400)) {
     mouseCounter = 0;
   }
 }
